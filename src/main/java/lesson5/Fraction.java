@@ -14,10 +14,7 @@ public class Fraction {
             if (this == o) {
                 return true;
             }
-            if (o instanceof Fraction) {
-                Fraction that = (Fraction) o;
-                return this.numerator * that.denominator == this.denominator * that.numerator;
-            }
-            return false;
+            if (!(o instanceof Fraction that)) return false;
+            return this.numerator * that.denominator == this.denominator * that.numerator;
         }
 }
