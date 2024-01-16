@@ -1,17 +1,13 @@
 package lesson7;
 import java.util.List;
 
-public class SearchResponse {
-    private List<DataItem> data;
+public class SearchResponse<T> {
+    private List<T> data;
     private Pagination pagination;
 
-    public List<DataItem> getData() {
-        return data;
-    }
-
-    public void setData(List<DataItem> data) {
-        this.data = data;
-    }
+    public List<T> getData() {
+            return data;
+        }
 
     public Pagination getPagination() {
         return pagination;
