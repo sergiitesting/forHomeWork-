@@ -1,0 +1,7 @@
+<suite name="Google translate">
+    <test name="Translate text in 20 lang">
+        <classes>
+            <class name="lesson10.TranslateStringV2"/>
+        </classes>
+    </test>
+</suite>
