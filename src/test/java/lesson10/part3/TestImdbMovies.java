@@ -36,8 +36,6 @@ public class TestImdbMovies {
 
         List<Object[]> combinedList = new ArrayList<>();
 
-//        int limit = Math.min(Math.min(names.size(), rating.size()), years.size());
-
         List<String> hrefs = getHrefOfTheMovie(urlTop);
 
         for (int i = 0; i < 100; i++) {
