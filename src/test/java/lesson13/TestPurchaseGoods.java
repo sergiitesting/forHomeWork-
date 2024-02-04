@@ -5,7 +5,6 @@ import lesson13.page.*;
 import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
 
 public class TestPurchaseGoods{
 
@@ -40,6 +39,5 @@ public class TestPurchaseGoods{
         checkoutOverviewPage.calculatePercentageTax()
                 .clickFinishButton();
         checkoutCompletePage.checkCompleteText();
-        sleep(5000);
     }
 }
